@@ -22,6 +22,13 @@ til en egen "review app".
 Når du har fulgt instruksjonene, skal dere sørge for at deres egen Spring Boot applikasjon er deployet i Heroku pipelinen dere lager
 - Slå på "Review apps" https://devcenter.heroku.com/articles/github-integration-review-apps
 
+## La Travis deploye til Heroku 
+
+Følg instruksene her; 
+https://docs.travis-ci.com/user/deployment/heroku/
+
+Legg spesielt merke til hvordan Heroku håndterer Hemmeligheter som password og API tokens
+
 ## Test følgende
 
 - Lag en Pull request i repoet. Bygger Travis pull request? Lager Heroku en review app?
