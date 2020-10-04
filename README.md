@@ -5,10 +5,9 @@ Målet med oppgaven er at Travis skal gjøre kontinuerlig deployment av applikas
 Vi har etter denne øvelsen tre viktige ting på plass
 
 * Versjonskontroll - Github passer på koden !
-* CI - kontinuerlig integrasjon. Travis passer på at Master branch er i en konstang god tilstand. Koden kompilerer alltid, tester er alltid "grønne"
-* Travis passer deployer kontinuerlig siste versjon av Master til  et "staging" miljøe, som vi typisk tester i. Travis deployer hver pull request
-til en egen "review app".
-* Vi kan manuelt "promotere" staging -> live. Live er det miljøet som brukere opplever.
+* CI - kontinuerlig integrasjon. Travis passer på at Master branch er i en konstant god tilstand. Koden kompilerer, tester er "grønne"
+* Travis deployer kontinuerlig Master til  et "staging" miljø. Travis deployer hver pull request til en egen "review app".
+* Vi kan manuelt "promotere" staging -> live. 
 
 ## Lag en ny app
 
@@ -33,10 +32,9 @@ Legg spesielt merke til hvordan Heroku håndterer Hemmeligheter som password og 
 
 - Lag en Pull request i repoet. Bygger Travis pull request? Lager Heroku en review app?
 - Merge pull requesten til master.
-- Gjør en manuelt push av master branch til heroku (git push heroku master). Se at "Staging" applikasjonen endrer seg
+- Gjør en manuell push av master branch til heroku (git push heroku master). Se at "Staging" applikasjonen endrer seg
 - Promoter staging applikasjonen til prod
 - Se at prod applikasjonen oppdaterer seg.
-
 
 ## Nyttige lenker
  
