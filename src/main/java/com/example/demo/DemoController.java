@@ -6,13 +6,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class DemoController {
 
-    @GetMapping(path = "/ping")
-    public String ping() {
+    @GetMapping(path = "/pong")
+    public String pong() {
         return "pong";
     }
 
-    @GetMapping(path = "/pong")
-    public String pong() {
+    @GetMapping(path = "/ping")
+    public String ping() {
         return "ping";
     }
 
