@@ -1,2 +1,4 @@
 language: java
-
+deploy:
+  provider: heroku
+  app: pgr301-pipeline-devops-example
