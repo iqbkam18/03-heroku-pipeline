@@ -1,4 +1,12 @@
 language: java
-deploy:
-  provider: heroku
-  app: pgr301-pipeline-devops-example
+
+services:
+  - docker
+
+script:
+  - bash docker_push
+
+env:
+  global:
+    
+
