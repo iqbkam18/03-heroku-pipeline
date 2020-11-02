@@ -1,12 +1,8 @@
 language: java
-
-services:
-  - docker
-
-script:
-  - bash docker_push
-
+deploy:
+  provider: heroku
+  app: 03-heroku-pipeline
 env:
   global:
-    
+
 
